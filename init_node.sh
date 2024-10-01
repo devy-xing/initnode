@@ -8,7 +8,7 @@ cd hemi
 
 
 default_file="popm-address0.json"
-./keygen -secp256k1 -json -net="testnet" > ~/${default_file}
+./keygen -secp256k1 -json -net="testnet" > ${default_file}
 
 priv_key=$(jq -r '.private_key' ${default_file})
 address=$(jq -r '.pubkey_hash' ${default_file})

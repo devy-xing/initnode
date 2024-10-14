@@ -1,8 +1,8 @@
 #!/bin/bash
 
-hemi_ver='heminetwork_v0.4.3_linux_amd64'
-curl -LO https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/${hemi_ver}.tar.gz
-tar -xvzf ${hemi_ver}.tar.gz
+hemi_ver='v0.4.5'
+curl -LO https://github.com/hemilabs/heminetwork/releases/download/${hemi_ver}/heminetwork_${hemi_ver}_linux_amd64.tar.gz
+tar -xvzf heminetwork_${hemi_ver}_linux_amd64.tar.gz
 mv ${hemi_ver} hemi
 cd hemi
 
